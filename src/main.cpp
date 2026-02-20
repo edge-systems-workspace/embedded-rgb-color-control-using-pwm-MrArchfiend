@@ -42,15 +42,31 @@ void loop() {
 
     // -------- ANALOG (PWM) MODE --------
 
-    // TODO 9:
-    // Set RED brightness using analogWrite()
+    Serial.println("PWM Mode: Color Transition");
 
-    // TODO 10:
-    // Set GREEN brightness using analogWrite()
+    // TODO 9: Set RED brightness using analogWrite()
+    analogWrite(RED_PIN, 255);   // Full brightness
+    analogWrite(GREEN_PIN, 0);
+    analogWrite(BLUE_PIN, 0);
+    delay(1000);
 
-    // TODO 11:
-    // Set BLUE brightness using analogWrite()
+    // TODO 10: Set GREEN brightness using analogWrite()
+    analogWrite(RED_PIN, 0);
+    analogWrite(GREEN_PIN, 255);
+    analogWrite(BLUE_PIN, 0);
+    delay(1000);
 
-    // TODO 12:
-    // Add delay for visible transition
+    // TODO 11: Set BLUE brightness using analogWrite()
+    analogWrite(RED_PIN, 0);
+    analogWrite(GREEN_PIN, 0);
+    analogWrite(BLUE_PIN, 255);
+    delay(1000);
+
+    // TODO 12: Add delay for visible transition
+    analogWrite(RED_PIN, 128);
+    analogWrite(GREEN_PIN, 0);
+    analogWrite(BLUE_PIN, 128);   // Purple mix
+    delay(1000);
+
+    Serial.println("------------------------------");
 }

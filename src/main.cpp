@@ -11,14 +11,19 @@ const int BLUE_PIN = 11;
 
 void setup() {
 
-    // TODO 4:
-    // Initialize Serial communication (9600 baud)
+    // TODO 4: Initialize Serial communication (9600 baud)
+    Serial.begin(9600);
 
-    // TODO 5:
-    // Configure RGB pins as OUTPUT
+    // TODO 5: Configure RGB pins as OUTPUT
+    pinMode(RED_PIN, OUTPUT);
+    pinMode(GREEN_PIN, OUTPUT);
+    pinMode(BLUE_PIN, OUTPUT);
 
-    // TODO 6:
-    // Print initialization message
+    // TODO 6: Print initialization message
+    Serial.println("======================================");
+    Serial.println(" Embedded RGB LED Control System ");
+    Serial.println("======================================");
+}
 }
 
 void loop() {

@@ -1,23 +1,13 @@
 #include <Arduino.h>
-/**
- * @file main.cpp
- * @brief Embedded RGB LED Control (Digital + PWM)
- * @author YOUR_NAME
- * @date YYYY-MM-DD
- *
- * @details
- * Controls RGB LED using digital ON/OFF
- * and analog PWM brightness control.
- */
 
- // TODO 1:
- // Define RED pin (Use 9)
+// TODO 1: Define RED pin (Use 9)
+const int RED_PIN = 9;
 
- // TODO 2:
- // Define GREEN pin (Use 10)
+// TODO 2: Define GREEN pin (Use 10)
+const int GREEN_PIN = 10;
 
- // TODO 3:
- // Define BLUE pin (Use 11)
+// TODO 3: Define BLUE pin (Use 11)
+const int BLUE_PIN = 11;
 
 void setup() {
 

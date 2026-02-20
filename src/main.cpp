@@ -30,11 +30,15 @@ void loop() {
 
     // -------- DIGITAL MODE --------
 
-    // TODO 7:
-    // Turn ON red (digital HIGH)
+    Serial.println("Digital Mode: Red ON");
+    
+    // TODO 7: Turn ON red (digital HIGH)
+    digitalWrite(RED_PIN, HIGH);
+    delay(1000);
 
-    // TODO 8:
-    // Turn OFF red
+    // TODO 8: Turn OFF red
+    digitalWrite(RED_PIN, LOW);
+    delay(1000);
 
     // -------- ANALOG (PWM) MODE --------
 
